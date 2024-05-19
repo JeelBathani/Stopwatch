@@ -1,0 +1,125 @@
+
+body{
+   background : linear-gradient(25deg,rgb(180, 10, 95),#d36c76 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+
+    background-color: #eee9e9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0,0, 0.1);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.timer{
+
+    font-size: 44px;
+    background-color: #ffffffff ;
+    padding: 20px;
+    border-radius: 23px;
+    box-shadow: 0 0 12px rgba(0, green 0 , 0 blue,  0.1 alpha);
+    animation: pulse 1.5s infinite alternate;
+  
+
+}
+   
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes pulse {
+    from{
+         transform: scale(1);
+
+    }
+    to{
+        transform: scale(1.05);
+    }
+    
+}
+    .timer span{
+    
+        
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .control{
+        display: flex;
+   gap: 1rem;
+
+}
+
+
+button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #f25191;
+    color: aquamarine;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transation: background-color 0.3s ease-in-out;
+
+}
+button:hover{
+    background-color: cornflowerblue;
+
+}
+
+
+.lap-title{
+    font-size: 1.5rem;
+
+}
+
+.laps{
+    width: 100%;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0;
+    overflow:hiiii;
+    max-height: 200px;
+    background-color: chartreuse;
+    border-radius: 8px;
+    box-shadow: #f25191;
+
+}
+
+li{
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+li:last-child{
+    border-bottom: none;
+
+}
+
+li span {
+    font-weight: 700;
+
+}
